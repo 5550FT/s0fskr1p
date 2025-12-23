@@ -5,11 +5,16 @@
 }
 
 html, body, #root {
-  margin: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  margin: 0;
+  background: #008080; /* classic teal */
+  font-family: "Chicago", "Geneva", "MS Sans Serif", monospace;
+  font-size: 14px;
+  user-select: none;
 }
+
+
 
 /* ===== GLOBAL THEME ===== */
 body {
@@ -27,11 +32,13 @@ body {
     repeating-linear-gradient(
       45deg,
       #008080,
-      #008080 10px,
-      #007070 10px,
-      #007070 20px
+      #008080 8px,
+      #007070 8px,
+      #007070 16px
     );
+  overflow: hidden;
 }
+
 
 /* ===== WINDOW ===== */
 .window {
@@ -132,3 +139,9 @@ body {
   background: #000080;
   color: white;
 }
+/* ----- GLOBAL RESET ----- */
+* {
+  box-sizing: border-box;
+  image-rendering: pixelated;
+}
+
