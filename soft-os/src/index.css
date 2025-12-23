@@ -1,0 +1,134 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html, body, #root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ===== GLOBAL THEME ===== */
+body {
+  background: #008080;
+  font-family: "Chicago", "MS Sans Serif", "Tahoma", sans-serif;
+  font-size: 12px;
+}
+
+/* ===== DESKTOP ===== */
+.desktop {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #008080,
+      #008080 10px,
+      #007070 10px,
+      #007070 20px
+    );
+}
+
+/* ===== WINDOW ===== */
+.window {
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  width: 420px;
+  height: 300px;
+  background: #c0c0c0;
+  border: 2px solid #000;
+}
+
+/* ===== TITLE BAR ===== */
+.titlebar {
+  height: 22px;
+  background: #000080;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  font-weight: bold;
+}
+
+/* ===== WINDOW CONTROLS ===== */
+.window-controls {
+  display: flex;
+  gap: 4px;
+}
+
+.window-controls button {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  background: #c0c0c0;
+  padding: 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.window-controls button:active {
+  background: #808080;
+}
+
+/* ===== WINDOW CONTENT ===== */
+.window-content {
+  padding: 8px;
+  height: calc(100% - 22px);
+  background: #e0e0e0;
+  overflow: auto;
+}
+
+/* ===== TASKBAR ===== */
+.taskbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+  background: #c0c0c0;
+  border-top: 2px solid #000;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+}
+
+/* ===== START BUTTON ===== */
+.start-button {
+  height: 24px;
+  padding: 0 10px;
+  font-weight: bold;
+  border: 2px solid #000;
+  background: #c0c0c0;
+  cursor: pointer;
+}
+
+.start-button:active {
+  background: #808080;
+}
+
+/* ===== START MENU ===== */
+.start-menu {
+  position: absolute;
+  bottom: 32px;
+  left: 6px;
+  width: 200px;
+  background: #c0c0c0;
+  border: 2px solid #000;
+}
+
+.start-item {
+  padding: 6px 8px;
+  border-bottom: 1px solid #808080;
+  cursor: pointer;
+}
+
+.start-item:hover {
+  background: #000080;
+  color: white;
+}
